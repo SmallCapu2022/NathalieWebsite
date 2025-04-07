@@ -1,0 +1,35 @@
+<header class="header">
+    <div class="left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+    </div>
+  
+    <div class="center">
+      <h1 class="name">Nathalie Debailleul</h1>
+      <p class="subtitle">Experte Feng Shui</p>
+    </div>
+  
+    <div class="right">
+      <div class="dropdown">
+        <button (click)="toggleMenu()" class="contact-button">Contact Me</button>
+        @if (menuOpen) {
+          <div class="dropdown-content">
+            <a href="tel:0612345678" class="contact-item">
+              <span class="icon">📞</span>
+              <span class="text">0612345678</span>
+            </a>
+          
+            <a href="mailto:debailleulnd@gmail.com" class="contact-item">
+              <span class="icon">✉️</span>
+              <span class="text">debailleulnd&#64;gmail.com</span>
+            </a>
+          
+            <a href="https://facebook.com/nathaliepage" class="contact-item" target="_blank">
+              <span class="icon">🌐</span>
+              <span class="text">Facebook</span>
+            </a>
+          </div>
+        }
+      </div>
+    </div>
+  </header>
+  
